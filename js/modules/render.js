@@ -1,5 +1,7 @@
 export function render(data) {
   const results = data.results;
+  const main = document.querySelector("main");
+
   console.dir(results);
   results.forEach((item, i) => {
     const html = `

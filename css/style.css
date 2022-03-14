@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../fonts/Avenir.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Avenir.woff") format("woff"),
+    url("../fonts/Avenir.ttf") format("truetype"),
+    url("../fonts/Avenir.svg#Avenir") format("svg");
+}
+
+:root {
+  --red: #fe0000;
+  --black: #252525;
+}
+
+header {
+  border-top: 6px solid var(--red);
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+main {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+/* Header */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2vh;
+}
+header nav ul {
+  display: flex;
+  gap: 2vw;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-weight: 700;
+  /* font-size: calc(0.5vw + 0.5vh + 0.5vmin); */
+  font-family: "Avenir", Helvetica, sans-serif;
+  align-items: center;
+}
+
+.logo {
+  width: 7vw;
+}
+
+nav ul li {
+  list-style: none;
+  font-size: calc(0.5vw + 0.5vh + 0.5vmin);
+}
+
+nav ul li button {
+  background-color: var(--black);
+  border: none;
+  color: white;
+  font-size: calc(0.5vw + 0.5vh + 0.5vmin);
+  border-radius: 10px;
+  padding: 1vh 2vw;
+  font-weight: 700;
+}
+
+nav ul li button:hover {
+  background-color: #606060;
+  cursor: pointer;
+}
+
+section ul {
+  display: flex;
+  gap: 2vw;
+  flex-wrap: wrap;
+  margin-top: 2vh;
+  font-size: calc(0.6vw + 0.6vh + 0.6vmin);
+  font-weight: 800;
+  font-family: "Avenir", Helvetica, sans-serif;
+}
+
+section ul li {
+  list-style: none;
+}
+a {
+  color: var(--black);
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--red);
+  border-bottom: 3px solid var(--red);
+  padding-bottom: 1vh;
+}
+
+a:focus {
+  color: var(--black);
+  border-bottom: 3px solid var(--red);
+  padding-bottom: 1vh;
+}
+
+/* Main section */
+
+h1 {
+  font-family: "Avenir", Helvetica, sans-serif;
+  font-size: calc(2vw + 2vh + 2vmin);
+  margin-top: 5vh;
+}
+
+.stock-photo {
+  width: 90vw;
+  margin-top: 2vh;
+}
+
+p {
+  font-family: "Avenir", Helvetica, sans-serif;
+  margin-top: 2vh;
+  font-size: calc(0.7vw + 0.7vh + 0.7vmin);
+}
+
+/* Footer */
+
+footer {
+  background-color: #252525;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-top: 5vh;
+  width: 90%;
+  padding: 2vh 0;
+}
+
+footer ul:first-of-type {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+footer li {
+  color: white;
+  font-size: calc(0.7vw + 0.7vh + 0.7vmin);
+  font-weight: 700;
+  list-style: none;
+  font-family: "Avenir", Helvetica, sans-serif;
+}
+
+footer ul:last-of-type {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1vw;
+  padding-right: 5vw;
+}
+
+footer ul li img {
+  width: 2vw;
+  /* height: 5vh; */
+}

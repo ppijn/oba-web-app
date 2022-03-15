@@ -133,16 +133,17 @@ main section div {
 }
 
 .circle {
-  width: 10rem;
-  height: 10rem;
+  width: clamp(2vw, 15vw, 15vw);
+  height: clamp(2vw, 15vw, 15vw);
+
   border-radius: 50%;
-  background-color: #d0d0d040;
+  background-color: #c96c6c40;
 }
 
 h2 {
   font-family: "Avenir", Helvetica, sans-serif;
   font-size: calc(2vw + 2vh + 2vmin);
-  letter-spacing: 0.5ch;
+  letter-spacing: 0.2ch;
   margin-left: 4vw;
   font-weight: 300;
 }
@@ -194,6 +195,15 @@ section span div {
   margin-top: 4vh;
   padding: 2vh;
 }
+
+/* Boeken */
+
+.boek-kaft {
+  width: 10vw;
+  height: auto;
+  margin-right: 2vw;
+}
+
 /* Footer */
 
 footer {

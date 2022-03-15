@@ -1,13 +1,13 @@
 import { render } from "./render.js";
 
 export function getData() {
-  const main = document.querySelector("main");
+  const boeken = document.querySelector(".boeken");
   const cors = "https://cors-anywhere.herokuapp.com/";
   const endpoint = "https://zoeken.oba.nl/api/v1/search/?q=";
   const query = "tolkien";
-  const key = "1e19898c87464e239192c8bfe422f280";
-  const secret = "4289fec4e962a33118340c888699438d";
-  const detail = "Default";
+  const key = "f60b69054b02f50180d9c088e06270ea";
+  const secret = "34dd0c6e69370e1b0d2b06fb8343c17f";
+  const detail = "Minimum";
   const url = `${cors}${endpoint}${query}&authorization=${key}&detaillevel=${detail}&output=json`;
 
   const config = {

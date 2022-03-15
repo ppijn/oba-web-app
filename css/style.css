@@ -162,16 +162,22 @@ span ul {
 
 span ul li button {
   font-size: calc(0.7vw + 0.7vh + 0.7vmin);
+  border-bottom: 4px solid white;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  padding-bottom: 1.5vh;
   font-family: "Avenir", Helvetica, sans-serif;
   font-weight: 550;
-  border: none;
+  /* border: none none none 4px solid blue; */
   background-color: white;
   color: var(--black);
 }
 
 span ul li button:hover {
   border-bottom: 4px solid var(--red);
-  font-weight: 700;
+  /* font-weight: 700; */
+  cursor: pointer;
   padding-bottom: 1.5vh;
 }
 
@@ -199,9 +205,13 @@ section span div {
 /* Boeken */
 
 .boek-kaft {
-  width: 10vw;
+  width: 8vw;
   height: auto;
-  margin-right: 2vw;
+  margin-right: 10vw;
+}
+
+.boeken {
+  height: auto;
 }
 
 /* Footer */

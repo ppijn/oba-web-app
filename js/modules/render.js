@@ -1,16 +1,18 @@
 export function render(data) {
   const results = data.results;
-  const boeken = document.querySelector(".boeken");
+  let boeken = document.getElementsByClassName("boeken");
 
   console.dir(results);
-  results.forEach((item, i) => {
-    const html = `
-            <article>
-              <img src="${
-                item.coverimages ? item.coverimages[1] : "Geen samenvatting"
-              }" alt="Boek Kaft" class="boek-kaft">
-            </article>
-          `;
-    boeken.insertAdjacentHTML("beforeend", html);
+
+  Array.from(boeken).forEach((boek) => {
+    let html = "";
+    results.forEach((item, i) => {
+      html = `
+        <img src="${
+          item.coverimages ? item.coverimages[1] : "Geen samenvatting"
+        }" alt="Boek Kaft" class="boek-kaft">
+        `;
+    });
+    boek.insertAdjacentHTML("beforeend", html);
   });
 }

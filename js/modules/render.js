@@ -8,9 +8,11 @@ export function render(data) {
     let html = "";
     results.forEach((item, i) => {
       html = `
+      <a link="#">
         <img src="${
           item.coverimages ? item.coverimages[1] : "Geen samenvatting"
-        }" alt="Boek Kaft" class="boek-kaft">
+        }" alt="${item.titles}" class="boek-kaft">
+        </a>
         `;
     });
     boek.insertAdjacentHTML("beforeend", html);

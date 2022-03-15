@@ -82,20 +82,21 @@ section ul {
 section ul li {
   list-style: none;
 }
-a {
+
+header section a {
   color: var(--black);
   font-weight: 700;
 
   text-decoration: none;
 }
 
-a:hover {
+header section a:hover {
   color: var(--red);
   border-bottom: 3px solid var(--red);
   padding-bottom: 1vh;
 }
 
-a:focus {
+header section a:focus {
   color: var(--black);
   border-bottom: 3px solid var(--red);
   padding-bottom: 1vh;
@@ -126,7 +127,7 @@ main section:nth-of-type(2) {
   margin-top: 4vh;
 }
 
-main section div {
+main section div:first-of-type {
   display: flex;
   align-items: center;
   margin-top: 4vh;
@@ -156,11 +157,11 @@ h3 {
   /* justify-content: center; */
   margin: auto;
 }
-span ul {
+div ul {
   margin-top: 5vh;
 }
 
-span ul li button {
+div ul li button {
   font-size: calc(0.7vw + 0.7vh + 0.7vmin);
   border-bottom: 4px solid white;
   border-top: none;
@@ -174,20 +175,20 @@ span ul li button {
   color: var(--black);
 }
 
-span ul li button:hover {
+div ul li button:hover {
   border-bottom: 4px solid var(--red);
   /* font-weight: 700; */
   cursor: pointer;
   padding-bottom: 1.5vh;
 }
 
-span ul li button:focus {
+div ul li button:focus {
   border-bottom: 4px solid var(--red);
   padding-bottom: 1.5vh;
   font-weight: 800;
   font-size: calc(0.65vw + 0.65vh + 0.65vmin);
 }
-section span ul {
+section div ul {
   display: flex;
   /* justify-content: space-evenly; */
   gap: 7vw;
@@ -195,7 +196,7 @@ section span ul {
   padding: 0 6vw;
 }
 
-section span div {
+section div div {
   background-color: #c4c4c411;
   height: 10vh;
   margin-top: 4vh;
@@ -208,10 +209,24 @@ section span div {
   width: 8vw;
   height: auto;
   margin-right: 10vw;
+  cursor: pointer;
 }
 
 .boeken {
   height: auto;
+}
+
+.boeken .boek-kaft:first-of-type {
+  width: 10vw;
+  height: auto;
+  border-bottom: 5px solid #fec300;
+}
+
+div div a {
+  transition: all 0.2s ease-in-out;
+}
+div div a:hover {
+  transform: scale(1.05);
 }
 
 /* Footer */

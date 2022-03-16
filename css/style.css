@@ -130,7 +130,7 @@ main section:nth-of-type(2) {
 main section div:first-of-type {
   display: flex;
   align-items: center;
-  margin-top: 4vh;
+  margin-top: 6.5vh;
 }
 
 .circle {
@@ -222,7 +222,7 @@ section div div {
 
 .boek-title {
   width: 30vw;
-  background-color: #fe000030;
+  background-color: #c28c8c30;
   font-weight: 700;
   font-family: "Avenir", Helvetica, sans-serif;
   color: var(--black);

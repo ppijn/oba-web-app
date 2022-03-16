@@ -13,7 +13,7 @@ export function render(data) {
            item.coverimages ? item.coverimages[1] : "Geen samenvatting"
          }" alt="${item.titles}" class="boek-kaft">
          <span class="boek-title">${item.titles[0]}</span>
-          </a>
+        </a>
         
         `;
     });

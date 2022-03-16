@@ -46,7 +46,7 @@ header nav ul {
 }
 
 .logo {
-  width: 7vw;
+  width: 10%;
 }
 
 nav ul li {
@@ -214,6 +214,28 @@ section div div {
 
 .boeken {
   height: auto;
+}
+
+.boek-title:hover {
+  visibility: visible;
+}
+
+.boek-title {
+  width: 30vw;
+  background-color: #fe000030;
+  font-weight: 700;
+  font-family: "Avenir", Helvetica, sans-serif;
+  color: var(--black);
+  text-align: center;
+  border-radius: 6px;
+  padding: 1em;
+  position: absolute;
+  z-index: 999;
+  top: -55px;
+  left: -43px;
+  height: auto;
+  line-height: inherit;
+  font-size: calc(0.5vw + 0.5vh + 0.5vmin);
 }
 
 .boeken .boek-kaft:first-of-type {

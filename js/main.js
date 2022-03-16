@@ -5,7 +5,7 @@ import {
   getDataPlanning,
 } from "./modules/getData.js";
 
-getDataConcept();
-getDataDesign();
-getDataPlanning();
-getDataManagement();
+getDataConcept("Startende onderneming");
+getDataDesign("Prototype");
+getDataPlanning("Financiering");
+getDataManagement("Juridische Aspecten");

@@ -1,38 +1,42 @@
 export function renderConcept(data) {
   const results = data.results;
-  let boeken = document.getElementsByClassName("boeken1");
-  // const boeken = document.getElementById("concept-fase");
+  const boeken = document.querySelector(".boeken1");
 
   console.dir(results);
 
-  Array.from(boeken).forEach((boek) => {
-    let html = "";
-    results.forEach((item, i) => {
-      html = `
-        <a link="#detail">
-         <img src="${
-           item.coverimages ? item.coverimages[1] : "Geen samenvatting"
-         }" alt="${item.titles}" class="boek-kaft">
-         <span class="boek-title">${item.titles[0]}</span>
-        </a>
-        
-        `;
-    });
-    boek.insertAdjacentHTML("beforeend", html);
+  let html = "";
+  const boekenLink = document.querySelectorAll(".boeken1 a");
+  boekenLink.forEach((item, i) => {
+    item.remove();
   });
+  results.forEach((item, i) => {
+    html = `
+    <a href="#detail">
+      <img src="${
+        item.coverimages ? item.coverimages[1] : "Geen samenvatting"
+      }" alt="${item.titles}" class="boek-kaft">
+      <span class="boek-title">${item.titles[0]}</span>
+      </a>
+      `;
+  });
+  boeken.insertAdjacentHTML("beforeend", html);
+  console.log(document.querySelectorAll("#detail"));
 }
 
 export function renderDesign(data) {
   const results = data.results;
-  let boeken = document.getElementsByClassName("boeken2");
-  // const boeken = document.getElementById("concept-fase");
+  const boeken = document.querySelector(".boeken2");
 
   console.dir(results);
 
-  Array.from(boeken).forEach((boek) => {
-    let html = "";
-    results.forEach((item, i) => {
-      html = `
+  const boekenLink = document.querySelectorAll(".boeken2 a");
+  boekenLink.forEach((item, i) => {
+    item.remove();
+  });
+
+  let html = "";
+  results.forEach((item, i) => {
+    html = `
         <a link="#detail">
          <img src="${
            item.coverimages ? item.coverimages[1] : "Geen samenvatting"
@@ -41,22 +45,25 @@ export function renderDesign(data) {
         </a>
         
         `;
-    });
-    boek.insertAdjacentHTML("beforeend", html);
   });
+  boeken.insertAdjacentHTML("beforeend", html);
+  // });
 }
 
 export function renderPlanning(data) {
   const results = data.results;
-  let boeken = document.getElementsByClassName("boeken3");
-  // const boeken = document.getElementById("concept-fase");
+  const boeken = document.querySelector(".boeken3");
 
   console.dir(results);
 
-  Array.from(boeken).forEach((boek) => {
-    let html = "";
-    results.forEach((item, i) => {
-      html = `
+  const boekenLink = document.querySelectorAll(".boeken3 a");
+  boekenLink.forEach((item, i) => {
+    item.remove();
+  });
+
+  let html = "";
+  results.forEach((item, i) => {
+    html = `
         <a link="#detail">
          <img src="${
            item.coverimages ? item.coverimages[1] : "Geen samenvatting"
@@ -65,22 +72,25 @@ export function renderPlanning(data) {
         </a>
         
         `;
-    });
-    boek.insertAdjacentHTML("beforeend", html);
   });
+  boeken.insertAdjacentHTML("beforeend", html);
+  // });
 }
 
 export function renderManagement(data) {
   const results = data.results;
-  let boeken = document.getElementsByClassName("boeken4");
-  // const boeken = document.getElementById("concept-fase");
+  const boeken = document.querySelector(".boeken4");
 
   console.dir(results);
 
-  Array.from(boeken).forEach((boek) => {
-    let html = "";
-    results.forEach((item, i) => {
-      html = `
+  const boekenLink = document.querySelectorAll(".boeken4 a");
+  boekenLink.forEach((item, i) => {
+    item.remove();
+  });
+
+  let html = "";
+  results.forEach((item, i) => {
+    html = `
         <a link="#detail">
          <img src="${
            item.coverimages ? item.coverimages[1] : "Geen samenvatting"
@@ -89,7 +99,7 @@ export function renderManagement(data) {
         </a>
         
         `;
-    });
-    boek.insertAdjacentHTML("beforeend", html);
   });
+  boeken.insertAdjacentHTML("beforeend", html);
+  // });
 }

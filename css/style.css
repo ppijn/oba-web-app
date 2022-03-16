@@ -3,14 +3,6 @@
   margin: 0;
 }
 
-@font-face {
-  font-family: "Avenir";
-  src: url("../fonts/Avenir.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Avenir.woff") format("woff"),
-    url("../fonts/Avenir.ttf") format("truetype"),
-    url("../fonts/Avenir.svg#Avenir") format("svg");
-}
-
 :root {
   --red: #fe0000;
   --black: #252525;
@@ -41,7 +33,7 @@ header nav ul {
   justify-content: flex-end;
   font-weight: 700;
   /* font-size: calc(0.5vw + 0.5vh + 0.5vmin); */
-  font-family: "Avenir", Helvetica, sans-serif;
+  font-family: Arial;
   align-items: center;
 }
 
@@ -76,7 +68,7 @@ section ul {
   margin-top: 2vh;
   font-size: calc(0.6vw + 0.6vh + 0.6vmin);
   font-weight: 800;
-  font-family: "Avenir", Helvetica, sans-serif;
+  font-family: Arial;
 }
 
 section ul li {
@@ -105,7 +97,7 @@ header section a:focus {
 /* Main section */
 
 h1 {
-  font-family: "Avenir", Helvetica, sans-serif;
+  font-family: Arial;
   font-size: calc(2vw + 2vh + 2vmin);
   margin-top: 5vh;
 }
@@ -116,7 +108,7 @@ h1 {
 }
 
 p {
-  font-family: "Avenir", Helvetica, sans-serif;
+  font-family: Arial;
   margin-top: 2vh;
   font-size: calc(0.7vw + 0.7vh + 0.7vmin);
 }
@@ -130,19 +122,19 @@ main section:nth-of-type(2) {
 main section div:first-of-type {
   display: flex;
   align-items: center;
-  margin-top: 6.5vh;
+  margin-top: 2vh;
 }
 
 .circle {
   width: clamp(2vw, 15vw, 15vw);
   height: clamp(2vw, 15vw, 15vw);
-
   border-radius: 50%;
   background-color: #c96c6c40;
+  box-shadow: none;
 }
 
 h2 {
-  font-family: "Avenir", Helvetica, sans-serif;
+  font-family: Arial;
   font-size: calc(2vw + 2vh + 2vmin);
   letter-spacing: 0.2ch;
   margin-left: 4vw;
@@ -152,13 +144,14 @@ h2 {
 h3 {
   /* position: absolute; */
   font-size: calc(4vw + 4vh + 4vmin);
-  font-family: "Avenir", Helvetica, sans-serif;
+  font-family: Arial;
   color: white;
   /* justify-content: center; */
   margin: auto;
 }
 div ul {
   margin-top: 5vh;
+  margin-bottom: 6.5vh;
 }
 
 div ul li button {
@@ -168,7 +161,7 @@ div ul li button {
   border-right: none;
   border-left: none;
   padding-bottom: 1.5vh;
-  font-family: "Avenir", Helvetica, sans-serif;
+  font-family: Arial;
   font-weight: 550;
   /* border: none none none 4px solid blue; */
   background-color: white;
@@ -197,18 +190,20 @@ section div ul {
 }
 
 section div div {
-  background-color: #c4c4c411;
+  background-color: white;
+  box-shadow: 0px 0px 18px 4px rgba(0, 0, 0, 0.33);
+  border-radius: 1em;
   height: 10vh;
   margin-top: 4vh;
-  padding: 2vh;
+  padding: 2em;
 }
 
 /* Boeken */
 
 .boek-kaft {
-  width: 8vw;
+  width: 7vw;
   height: auto;
-  margin-right: 10vw;
+  margin-right: 10%;
   cursor: pointer;
 }
 
@@ -217,6 +212,7 @@ section div div {
 .boeken3,
 .boeken4 {
   height: auto;
+  margin-top: 6.5vh;
 }
 
 .boek-title:hover {
@@ -224,10 +220,10 @@ section div div {
 }
 
 .boek-title {
-  width: 30vw;
-  background-color: #c28c8c30;
+  width: 20vw;
+  background-color: #c6c6c6;
   font-weight: 700;
-  font-family: "Avenir", Helvetica, sans-serif;
+  font-family: Arial;
   color: var(--black);
   text-align: center;
   border-radius: 6px;
@@ -235,29 +231,29 @@ section div div {
   position: absolute;
   z-index: 999;
   top: -8vh;
-  left: -2vw;
+  left: -7vw;
   height: auto;
   line-height: inherit;
   font-size: calc(0.5vw + 0.5vh + 0.5vmin);
 }
 
-.boeken1 .boek-kaft:first-of-type {
+.boeken1 a:first-of-type .boek-kaft {
   width: 10vw;
   height: auto;
   border-bottom: 5px solid #fec300;
 }
 
-.boeken2 .boek-kaft:first-of-type {
+.boeken2 a:first-of-type .boek-kaft {
   width: 10vw;
   height: auto;
   border-bottom: 5px solid #fec300;
 }
-.boeken3 .boek-kaft:first-of-type {
+.boeken3 a:first-of-type .boek-kaft {
   width: 10vw;
   height: auto;
   border-bottom: 5px solid #fec300;
 }
-.boeken4 .boek-kaft:first-of-type {
+.boeken4 a:first-of-type .boek-kaft {
   width: 10vw;
   height: auto;
   border-bottom: 5px solid #fec300;
@@ -293,7 +289,7 @@ footer li {
   font-size: calc(0.7vw + 0.7vh + 0.7vmin);
   font-weight: 700;
   list-style: none;
-  font-family: "Avenir", Helvetica, sans-serif;
+  font-family: Arial;
 }
 
 footer ul:last-of-type {

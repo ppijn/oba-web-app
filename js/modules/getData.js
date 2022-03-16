@@ -5,23 +5,21 @@ import {
   renderPlanning,
 } from "./render.js";
 
+import { getBtnValue } from "./getButtonValue.js";
+getBtnValue();
+
 const cors = "https://cors-anywhere.herokuapp.com/";
 const endpoint = "https://zoeken.oba.nl/api/v1/search/?pagesize=5&q=";
 const key = "72a5ad5293a99ad46a9235121a3e0df2";
 const secret = "187b973dc49e054fa7635313a9c8540f";
 const detail = "Default";
 
-export function getDataConcept() {
-  let query = "Innovatie";
-  const url = `${cors}${endpoint}subject%3A${query}&authorization=${key}&detaillevel=${detail}&output=json`;
-
-  const boeken = document.querySelector(".boeken1");
-
-  const config = {
-    Authorization: `Bearer ${secret}`,
-  };
-
-  onload = fetch;
+const config = {
+  Authorization: `Bearer ${secret}`,
+};
+export function getDataConcept(btnValue) {
+  // let query = "Startende onderneming";
+  const url = `${cors}${endpoint}subject%3A${btnValue}&authorization=${key}&detaillevel=${detail}&output=json`;
 
   fetch(url, config)
     .then((response) => {
@@ -35,9 +33,10 @@ export function getDataConcept() {
     });
 }
 
-export function getDataDesign() {
-  let query = "Design";
-  const url = `${cors}${endpoint}subject%3A${query}&authorization=${key}&detaillevel=${detail}&output=json`;
+export function getDataDesign(btnValue) {
+  console.log(btnValue);
+  // let query = "Prototype";
+  const url = `${cors}${endpoint}subject%3A${btnValue}&authorization=${key}&detaillevel=${detail}&output=json`;
 
   const boeken = document.querySelector(".boeken2");
 
@@ -59,9 +58,9 @@ export function getDataDesign() {
     });
 }
 
-export function getDataPlanning() {
-  let query = "Planning";
-  const url = `${cors}${endpoint}subject%3A${query}&authorization=${key}&detaillevel=${detail}&output=json`;
+export function getDataPlanning(btnValue) {
+  // let query = "Financiering";
+  const url = `${cors}${endpoint}subject%3A${btnValue}&authorization=${key}&detaillevel=${detail}&output=json`;
 
   const boeken = document.querySelector(".boeken3");
 
@@ -83,9 +82,9 @@ export function getDataPlanning() {
     });
 }
 
-export function getDataManagement() {
-  let query = "Management";
-  const url = `${cors}${endpoint}subject%3A${query}&authorization=${key}&detaillevel=${detail}&output=json`;
+export function getDataManagement(btnValue) {
+  // let query = "Management";
+  const url = `${cors}${endpoint}subject%3A${btnValue}&authorization=${key}&detaillevel=${detail}&output=json`;
   const boeken = document.querySelector(".boeken4");
 
   const config = {

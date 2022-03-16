@@ -212,7 +212,10 @@ section div div {
   cursor: pointer;
 }
 
-.boeken {
+.boeken1,
+.boeken2,
+.boeken3,
+.boeken4 {
   height: auto;
 }
 
@@ -238,7 +241,23 @@ section div div {
   font-size: calc(0.5vw + 0.5vh + 0.5vmin);
 }
 
-.boeken .boek-kaft:first-of-type {
+.boeken1 .boek-kaft:first-of-type {
+  width: 10vw;
+  height: auto;
+  border-bottom: 5px solid #fec300;
+}
+
+.boeken2 .boek-kaft:first-of-type {
+  width: 10vw;
+  height: auto;
+  border-bottom: 5px solid #fec300;
+}
+.boeken3 .boek-kaft:first-of-type {
+  width: 10vw;
+  height: auto;
+  border-bottom: 5px solid #fec300;
+}
+.boeken4 .boek-kaft:first-of-type {
   width: 10vw;
   height: auto;
   border-bottom: 5px solid #fec300;

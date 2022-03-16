@@ -1,3 +1,11 @@
-import { getData } from "./modules/getData.js";
+import {
+  getDataConcept,
+  getDataDesign,
+  getDataManagement,
+  getDataPlanning,
+} from "./modules/getData.js";
 
-getData();
+getDataConcept();
+getDataDesign();
+getDataPlanning();
+getDataManagement();

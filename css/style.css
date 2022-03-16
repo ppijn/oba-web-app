@@ -234,8 +234,8 @@ section div div {
   padding: 1em;
   position: absolute;
   z-index: 999;
-  top: -55px;
-  left: -43px;
+  top: -8vh;
+  left: -2vw;
   height: auto;
   line-height: inherit;
   font-size: calc(0.5vw + 0.5vh + 0.5vmin);

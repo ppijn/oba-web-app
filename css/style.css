@@ -220,7 +220,7 @@ section div div {
 }
 
 .boek-title {
-  width: 20vw;
+  width: 15vw;
   background-color: #c6c6c6;
   font-weight: 700;
   font-family: Arial;
@@ -231,7 +231,7 @@ section div div {
   position: absolute;
   z-index: 999;
   top: -8vh;
-  left: -7vw;
+  left: -4vw;
   height: auto;
   line-height: inherit;
   font-size: calc(0.5vw + 0.5vh + 0.5vmin);

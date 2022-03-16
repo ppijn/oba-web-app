@@ -202,8 +202,8 @@ section div div {
 
 .boek-kaft {
   width: 7vw;
-  height: 10vh;
-  margin-right: 10%;
+  height: auto;
+  margin-right: 10vw;
   cursor: pointer;
 }
 
@@ -230,8 +230,8 @@ section div div {
   padding: 1em;
   position: absolute;
   z-index: 999;
-  top: -8vh;
-  left: -4vw;
+  top: -11vh;
+  left: -3vw;
   height: auto;
   line-height: inherit;
   font-size: calc(0.5vw + 0.5vh + 0.5vmin);

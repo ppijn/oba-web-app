@@ -18,7 +18,6 @@ const config = {
   Authorization: `Bearer ${secret}`,
 };
 export function getDataConcept(btnValue) {
-  // let query = "Startende onderneming";
   const url = `${cors}${endpoint}subject%3A${btnValue}&authorization=${key}&detaillevel=${detail}&output=json`;
 
   fetch(url, config)
@@ -34,17 +33,11 @@ export function getDataConcept(btnValue) {
 }
 
 export function getDataDesign(btnValue) {
-  console.log(btnValue);
-  // let query = "Prototype";
   const url = `${cors}${endpoint}subject%3A${btnValue}&authorization=${key}&detaillevel=${detail}&output=json`;
-
-  const boeken = document.querySelector(".boeken2");
 
   const config = {
     Authorization: `Bearer ${secret}`,
   };
-
-  onload = fetch;
 
   fetch(url, config)
     .then((response) => {
@@ -59,16 +52,11 @@ export function getDataDesign(btnValue) {
 }
 
 export function getDataPlanning(btnValue) {
-  // let query = "Financiering";
   const url = `${cors}${endpoint}subject%3A${btnValue}&authorization=${key}&detaillevel=${detail}&output=json`;
-
-  const boeken = document.querySelector(".boeken3");
 
   const config = {
     Authorization: `Bearer ${secret}`,
   };
-
-  onload = fetch;
 
   fetch(url, config)
     .then((response) => {
@@ -83,15 +71,11 @@ export function getDataPlanning(btnValue) {
 }
 
 export function getDataManagement(btnValue) {
-  // let query = "Management";
   const url = `${cors}${endpoint}subject%3A${btnValue}&authorization=${key}&detaillevel=${detail}&output=json`;
-  const boeken = document.querySelector(".boeken4");
 
   const config = {
     Authorization: `Bearer ${secret}`,
   };
-
-  onload = fetch;
 
   fetch(url, config)
     .then((response) => {

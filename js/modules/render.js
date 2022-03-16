@@ -2,15 +2,13 @@ export function renderConcept(data) {
   const results = data.results;
   const boeken = document.querySelector(".boeken1");
 
-  console.dir(results);
-
   let html = "";
   const boekenLink = document.querySelectorAll(".boeken1 a");
   boekenLink.forEach((item, i) => {
     item.remove();
   });
   results.forEach((item, i) => {
-    html = `
+    html += `
     <a href="#detail">
       <img src="${
         item.coverimages ? item.coverimages[1] : "Geen samenvatting"
@@ -36,7 +34,7 @@ export function renderDesign(data) {
 
   let html = "";
   results.forEach((item, i) => {
-    html = `
+    html += `
         <a link="#detail">
          <img src="${
            item.coverimages ? item.coverimages[1] : "Geen samenvatting"
@@ -63,7 +61,7 @@ export function renderPlanning(data) {
 
   let html = "";
   results.forEach((item, i) => {
-    html = `
+    html += `
         <a link="#detail">
          <img src="${
            item.coverimages ? item.coverimages[1] : "Geen samenvatting"
@@ -90,7 +88,7 @@ export function renderManagement(data) {
 
   let html = "";
   results.forEach((item, i) => {
-    html = `
+    html += `
         <a link="#detail">
          <img src="${
            item.coverimages ? item.coverimages[1] : "Geen samenvatting"

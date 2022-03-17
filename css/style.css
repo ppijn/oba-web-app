@@ -3,9 +3,88 @@
   margin: 0;
 }
 
+@keyframes gra {
+  0% {
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      color-stop(0%, var(--grey)),
+      color-stop(21%, var(--grey)),
+      color-stop(56%, #ffffff),
+      color-stop(88%, var(--grey))
+    );
+    background: -webkit-linear-gradient(
+      -45deg,
+      var(--grey) 0%,
+      var(--grey) 21%,
+      #ffffff 56%,
+      var(--grey) 88%
+    );
+    background: linear-gradient(
+      135deg,
+      var(--grey) 0%,
+      var(--grey) 21%,
+      #ffffff 56%,
+      var(--grey) 88%
+    );
+  }
+  50% {
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      color-stop(0%, var(--grey)),
+      color-stop(10%, var(--grey)),
+      color-stop(40%, #ffffff),
+      color-stop(60%, var(--grey))
+    );
+    background: -webkit-linear-gradient(
+      -45deg,
+      var(--grey) 0%,
+      var(--grey) 10%,
+      #ffffff 40%,
+      var(--grey) 60%
+    );
+    background: linear-gradient(
+      135deg,
+      var(--grey) 0%,
+      var(--grey) 10%,
+      #ffffff 40%,
+      var(--grey) 60%
+    );
+  }
+  100% {
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      color-stop(0%, var(--grey)),
+      color-stop(5%, var(--grey)),
+      color-stop(10%, #ffffff),
+      color-stop(40%, var(--grey))
+    );
+    background: -webkit-linear-gradient(
+      -45deg,
+      var(--grey) 0%,
+      var(--grey) 5%,
+      #ffffff 10%,
+      var(--grey) 40%
+    );
+    background: linear-gradient(
+      135deg,
+      var(--grey) 0%,
+      var(--grey) 5%,
+      #ffffff 10%,
+      var(--grey) 40%
+    );
+  }
+}
+
 :root {
   --red: #fe0000;
   --black: #252525;
+  --grey: #dddddd;
 }
 
 header {
@@ -201,9 +280,9 @@ section div div {
 /* Boeken */
 
 .boek-kaft {
-  width: 7vw;
+  width: 9vw;
   height: auto;
-  margin-right: 10vw;
+  margin-right: 8vw;
   cursor: pointer;
 }
 
@@ -238,23 +317,23 @@ section div div {
 }
 
 .boeken1 a:first-of-type .boek-kaft {
-  width: 10vw;
+  width: 12vw;
   height: auto;
   border-bottom: 5px solid #fec300;
 }
 
 .boeken2 a:first-of-type .boek-kaft {
-  width: 10vw;
+  width: 12vw;
   height: auto;
   border-bottom: 5px solid #fec300;
 }
 .boeken3 a:first-of-type .boek-kaft {
-  width: 10vw;
+  width: 12vw;
   height: auto;
   border-bottom: 5px solid #fec300;
 }
 .boeken4 a:first-of-type .boek-kaft {
-  width: 10vw;
+  width: 12vw;
   height: auto;
   border-bottom: 5px solid #fec300;
 }
@@ -266,6 +345,45 @@ div div a:hover {
   transform: scale(1.05);
 }
 
+/* Error */
+
+h4 {
+  text-align: center;
+  font-size: calc(1vw + 1vh + 1vmin);
+  color: #bbbbbb;
+  font-family: Arial;
+}
+
+.error {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Skeleton state */
+
+.skeleton1,
+.skeleton2,
+.skeleton3,
+.skeleton4 {
+  display: flex;
+}
+.square {
+  width: 4vw;
+  margin-right: 4vw;
+  border-radius: none;
+  /* background-color: #60606030; */
+  animation: gra 5s infinite;
+  animation-direction: reverse;
+  -webkit-animation: gra 5s infinite;
+  -webkit-animation-direction: reverse;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  box-shadow: none;
+}
+
+.hidden {
+  display: none;
+}
 /* Footer */
 
 footer {

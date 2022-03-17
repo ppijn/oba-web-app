@@ -6,6 +6,6 @@ import {
 } from "./modules/getData.js";
 
 getDataConcept("Startende onderneming");
-getDataDesign("Prototype");
+getDataDesign("Logo's");
 getDataPlanning("Financiering");
 getDataManagement("Juridische Aspecten");

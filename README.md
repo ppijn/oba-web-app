@@ -50,3 +50,9 @@ export function getBtnValue() {
 console.log(getBtnValue);
 
 ```
+
+Wat had ik nog willen toevoegen/ verbeteren?
+
+- Detailed Page
+- Pijltje om meer boeken in te laden
+- Skeleton state goed verbergen (nu zie je de boeken er naast staan)

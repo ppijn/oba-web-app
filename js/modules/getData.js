@@ -46,6 +46,8 @@ export function getDataConcept(btnValue) {
     })
     .catch((err) => {
       console.log(err);
+      addSkeletonState1();
+
       errorSection1.insertAdjacentHTML(
         "beforeend",
         `
@@ -73,6 +75,8 @@ export function getDataDesign(btnValue) {
     })
     .catch((err) => {
       console.log(err);
+      addSkeletonState2();
+
       errorSection2.insertAdjacentHTML(
         "beforeend",
         `
@@ -100,6 +104,8 @@ export function getDataPlanning(btnValue) {
     })
     .catch((err) => {
       console.log(err);
+      addSkeletonState3();
+
       errorSection3.insertAdjacentHTML(
         "beforeend",
         `
@@ -122,11 +128,13 @@ export function getDataManagement(btnValue) {
       return response.json();
     })
     .then((data) => {
-      addSkeletonState4();
       renderManagement(data);
+      addSkeletonState4();
     })
     .catch((err) => {
       console.log(err);
+      addSkeletonState4();
+
       errorSection4.insertAdjacentHTML(
         "beforeend",
         `

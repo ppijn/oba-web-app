@@ -111,7 +111,6 @@ header nav ul {
   flex-direction: row;
   justify-content: flex-end;
   font-weight: 700;
-  /* font-size: calc(0.5vw + 0.5vh + 0.5vmin); */
   font-family: Arial;
   align-items: center;
 }
@@ -157,7 +156,6 @@ section ul li {
 header section a {
   color: var(--black);
   font-weight: 700;
-
   text-decoration: none;
 }
 
@@ -221,11 +219,9 @@ h2 {
 }
 
 h3 {
-  /* position: absolute; */
   font-size: calc(4vw + 4vh + 4vmin);
   font-family: Arial;
   color: white;
-  /* justify-content: center; */
   margin: auto;
 }
 div ul {
@@ -242,14 +238,12 @@ div ul li button {
   padding-bottom: 1.5vh;
   font-family: Arial;
   font-weight: 550;
-  /* border: none none none 4px solid blue; */
   background-color: white;
   color: var(--black);
 }
 
 div ul li button:hover {
   border-bottom: 4px solid var(--red);
-  /* font-weight: 700; */
   cursor: pointer;
   padding-bottom: 1.5vh;
 }
@@ -262,7 +256,6 @@ div ul li button:focus {
 }
 section div ul {
   display: flex;
-  /* justify-content: space-evenly; */
   gap: 7vw;
   justify-content: flex-start;
   padding: 0 6vw;
@@ -372,7 +365,6 @@ h4 {
   height: clamp(2vw, 10vw, 10vw);
   margin-right: 4vw;
   border-radius: 1px;
-  /* background-color: #60606030; */
   animation: gra 5s infinite;
   animation-direction: reverse;
   -webkit-animation: gra 5s infinite;
@@ -420,5 +412,4 @@ footer ul:last-of-type {
 
 footer ul li img {
   width: 2vw;
-  /* height: 5vh; */
 }

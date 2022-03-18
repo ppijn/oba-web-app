@@ -18,4 +18,3 @@ export function getBtnValue() {
     });
   });
 }
-console.log(getBtnValue);

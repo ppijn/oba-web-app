@@ -4,13 +4,13 @@ Voor dit project kregen wij 1 week om iets te creeeren voor de OBA. We hadden ke
 
 ```
 
-1. **Voeding en diëtiek**
+1. Voeding en diëtiek
    Als sportieve twintiger wil ik mij verdiepen in het effect van gezonde voeding op mijn conditie, om te leren hoe ik mijn sport beter kan beoefenen.
 
-2. **Digitaal burgerschap**
+2. Digitaal burgerschap
    Als oudere burger wil ik leren hoe ik digitale formulieren van de gemeente kan vinden, invullen en versturen, om zodoende de digitalisering van de maatschappij beter het hoofd te kunnen bieden.
 
-3. **Ondernemen**
+3. Ondernemen
    Als jonge ondernemer wil ik meer informatie vinden over het opzetten van een onderneming, om zodoende meer kans te hebben op succes.
 ```
 

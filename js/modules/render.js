@@ -1,4 +1,4 @@
-export function renderConcept(data) {
+export async function renderConcept(data) {
   const results = data.results;
   const boeken = document.querySelector(".boeken1");
 
@@ -10,18 +10,23 @@ export function renderConcept(data) {
   results.forEach((item, i) => {
     html += `
     <a href="#detail">
-      <img src="${
-        item.coverimages ? item.coverimages[1] : "Geen samenvatting"
-      }" alt="${item.titles}" class="boek-kaft">
-      <span class="boek-title">${item.titles[0]}</span>
-      </a>
-      `;
+    <img src="${
+      item.coverimages ? item.coverimages[1] : "Geen samenvatting"
+    }" alt="${item.titles}" class="boek-kaft">
+    <span class="boek-title">${item.titles[0]}</span>
+    </a>
+    `;
   });
   boeken.insertAdjacentHTML("beforeend", html);
-  console.log(document.querySelectorAll("#detail"));
 }
+// const boekenKaft = document.querySelectorAll(".boek-kaft");
+// boekenKaft.addEventListener("click", function (e) {
+//   e.preventDefault();
+//   homePage.classList.toggle("hidden");
+//   detailPage.classList.toggle("hidden");
+// });
 
-export function renderDesign(data) {
+export async function renderDesign(data) {
   const results = data.results;
   const boeken = document.querySelector(".boeken2");
 
@@ -48,7 +53,7 @@ export function renderDesign(data) {
   // });
 }
 
-export function renderPlanning(data) {
+export async function renderPlanning(data) {
   const results = data.results;
   const boeken = document.querySelector(".boeken3");
 
@@ -75,7 +80,7 @@ export function renderPlanning(data) {
   // });
 }
 
-export function renderManagement(data) {
+export async function renderManagement(data) {
   const results = data.results;
   const boeken = document.querySelector(".boeken4");
 

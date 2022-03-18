@@ -1,4 +1,4 @@
-import { backToHome } from "./modules/detail.js";
+import { backToHome, toDetailPage } from "./modules/detail.js";
 import {
   getDataConcept,
   getDataDesign,
@@ -11,4 +11,4 @@ getDataDesign("Logo's");
 getDataPlanning("Financiering");
 getDataManagement("Juridische Aspecten");
 backToHome();
-// toDetailPage();
+toDetailPage();

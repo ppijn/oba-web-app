@@ -35,7 +35,7 @@ export function renderDesign(data) {
   let html = "";
   results.forEach((item, i) => {
     html += `
-        <a link="#detail">
+        <a href="#detail">
          <img src="${
            item.coverimages ? item.coverimages[1] : "Geen samenvatting"
          }" alt="${item.titles}" class="boek-kaft">
@@ -62,7 +62,7 @@ export function renderPlanning(data) {
   let html = "";
   results.forEach((item, i) => {
     html += `
-        <a link="#detail">
+        <a href="#detail">
          <img src="${
            item.coverimages ? item.coverimages[1] : "Geen samenvatting"
          }" alt="${item.titles}" class="boek-kaft">
@@ -89,7 +89,7 @@ export function renderManagement(data) {
   let html = "";
   results.forEach((item, i) => {
     html += `
-        <a link="#detail">
+        <a href="#detail">
          <img src="${
            item.coverimages ? item.coverimages[1] : "Geen samenvatting"
          }" alt="${item.titles}" class="boek-kaft">
